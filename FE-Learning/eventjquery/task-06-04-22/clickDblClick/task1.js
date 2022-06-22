@@ -1,0 +1,9 @@
+$("#hover").hover(function(){
+    $("#hover").addClass("hoverbgcolor")
+},function(){
+    $("#hover").removeClass("hoverbgcolor")
+}
+);
+$("#doubleclick").dblclick(function(){
+    $("#doubleclick").toggleClass("dblclickbgcolor")
+})

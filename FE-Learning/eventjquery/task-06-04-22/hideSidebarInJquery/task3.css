@@ -1,0 +1,17 @@
+.sidebar { 
+    width: 200px;
+    background-color: #f8f5f5;
+    position: fixed;
+    height: 100vh;
+    overflow: auto;
+  }
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  .sidebar a:hover {
+    background-color: rgb(97, 96, 96);
+    color: white;
+  }

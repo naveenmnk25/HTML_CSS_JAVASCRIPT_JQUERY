@@ -1,0 +1,20 @@
+#hover{
+    height: 250px;
+    width: 250px;
+    background-color: black; 
+    color: whitesmoke;
+}
+#doubleclick{
+    height: 250px;
+    width: 250px;
+    background-color: rgb(253, 5, 5);
+    color: whitesmoke;
+}
+.hoverbgcolor{
+    background-color: rgb(39, 207, 171) !important;
+    color: black  !important;
+}
+.dblclickbgcolor{
+    background-color: rgb(234, 238, 17) !important;
+    color: rgb(22, 20, 20)  !important;
+}

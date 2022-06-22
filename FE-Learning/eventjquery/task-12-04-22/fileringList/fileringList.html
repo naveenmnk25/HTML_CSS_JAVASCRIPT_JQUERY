@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtering List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container shadow p-4 mt-5">
+        <div class="row mt-5 ">
+            <div class="col">
+                <div class="text-center">
+                    <button type="button" id="first-name-btn" class="btn btn-outline-success w-25 p-3">First</button>
+                    <button type="button" id="middle-name-btn" class="btn btn-outline-danger w-25 p-3">Middle</button>
+                    <button type="button" id="last-name-btn" class="btn btn-outline-warning w-25 p-3">Last</button>
+                </div>
+            </div>
+        </div>
+        <div class="row  mt-5 ">
+            <div class="col-md-6 ">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-primary ">Naveen</li>
+                    <li class="list-group-item list-group-item-secondary">Kumar</li>
+                    <li class="list-group-item list-group-item-success">Nazriya</li>
+                    <li class="list-group-item list-group-item-danger">King Kolhi</li>
+                    <li class="list-group-item list-group-item-warning">Dhanush</li>
+                </ul>
+
+            </div>
+            <div class="col-md-6">
+                <button type="button" id="add-new-element" class="btn btn-outline-primary">Add new Element</button>
+                <button type="button" id="remove-last-element" class="btn btn-outline-danger">Remove last
+                    Element</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./fileringList.js"></script>
+</body>
+
+</html>

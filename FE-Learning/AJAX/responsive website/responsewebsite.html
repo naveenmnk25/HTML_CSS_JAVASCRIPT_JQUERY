@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./index.css"> -->
+    <style>
+        .navbar-brand img{
+     border-radius: 50%;
+}
+.skill{
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+               inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+               -0.5px -0.5px 0px rgba(0, 0, 0, 0.15),
+               0px -12px 10px -10px rgba(0, 0, 0, 0.15);
+}
+#number{
+    font-weight: 700;
+    color: #555;
+}
+
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472 ;
+    stroke-dashoffset: 472;
+    animation: anime 2s linear forwards;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@keyframes anime{
+    100%{
+        stroke-dashoffset: 165;
+    }
+}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+            <img src="https://st2.depositphotos.com/5943796/11382/v/450/depositphotos_113827134-stock-illustration-initial-letter-nk-blue-swoosh.jpg"
+                width="30" height="30" class="d-inline-block align-top" alt=""> NK TECH
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!--  -->
+    <div class="row  mt-5">
+        <div class="col-12">
+            <div class="text-center">
+                <h1>MY PROFILE</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row  mt-5">    
+            <div class="col-md-3 ">
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number">
+
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#e91e63" />
+                                <stop offset="100%" stop-color="#673ab7" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                    <h2 class="text-center text-primary">HTML</h2>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number1">
+
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#e91e63" />
+                                <stop offset="100%" stop-color="#673ab7" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                    <h2 class="text-center text-success">CSS</h2>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number2">
+
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#e91e63" />
+                                <stop offset="100%" stop-color="#673ab7" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                    <h2 class="text-center text-info">JAVASCRIPT</h2>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number3">
+
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#e91e63" />
+                                <stop offset="100%" stop-color="#673ab7" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                    <h2 class="text-center text-danger">JQUERY</h2>
+                </div>
+            </div>
+        
+
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <script >
+        
+    let number=  $("#number")
+    let count=0;
+      setInterval(() => {
+          if(count==65){
+              clearInterval();
+          }else{
+              count+=1;
+              number.html(count + "%")
+          }
+         
+      }, 29);
+    let number1=  $("#number1")
+    let count1=0;
+      setInterval(() => {
+          if(count1==70){
+              clearInterval();
+          }else{
+              count1+=1;
+              number1.html(count1 + "%")
+          }
+         
+      }, 29);
+    let number2=  $("#number2")
+    let count2=0;
+      setInterval(() => {
+          if(count2==80){
+              clearInterval();
+          }else{
+              count2+=1;
+              number2.html(count2 + "%")
+          }
+         
+      }, 29);
+    let number3=  $("#number3")
+    let count3=0;
+      setInterval(() => {
+          if(count3==75){
+              clearInterval();
+          }else{
+              count3+=1;
+              number3.html(count3 + "%")
+          }
+         
+      }, 29);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.css001{
+    height: 250px;
+    width: 550px;
+    background-color: aquamarine;
+}
+.css002{
+    height: 250px;
+    width: 550px;
+    background-color: rgb(174, 223, 39);
+}
+.cssclasses01{
+    background-color: blue;
+    color: aliceblue;
+    border: 4px inset red;
+    padding: 5px;
+}

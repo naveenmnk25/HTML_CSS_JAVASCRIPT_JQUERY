@@ -1,0 +1,17 @@
+.box{
+    height: 150px;
+    width: 150px;
+    background-color: aquamarine;
+    border: 3px outset rgb(224, 128, 200);
+    margin: 5px;
+}
+.box01{
+    background-color: rgb(139, 203, 223);
+}
+.round{
+    height: 70px;
+    width: 70px;
+    background-color: rgba(189, 97, 226, 0.651);
+    border: 2px inset rgb(183, 218, 30);
+    border-radius: 50%;
+}
